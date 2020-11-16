@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('Packaging') {
             steps {
                 git 'https://github.com/morgom94/simple-java-maven-app.git'
                 bat "mvn  clean package"
